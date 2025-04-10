@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/translate_api.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/.*", "dest": "api/translate_api.py" }
+    ]
+  }
+  
