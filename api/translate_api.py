@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import pipeline
 
-app = FastAPI()  # <=== this is what Uvicorn is looking for
+app = FastAPI()
 
 translator = pipeline("translation", model="google-t5/t5-base")
 
